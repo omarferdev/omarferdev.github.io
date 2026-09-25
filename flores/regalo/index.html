@@ -165,6 +165,9 @@
   .editor-firma a { color: var(--accent); text-decoration: none; }
   /* enviar como liga */
   .share-help { margin: -2px 0 0; font: 400 11.5px/1.45 var(--sans); color: var(--muted); text-align: center; }
+  /* el panel es una columna flexible con desplazamiento: sin esto, un aviso largo se encoge a su altura mínima y su texto
+     se encima con la línea de abajo */
+  .editor-msg, .editor-firma, .share-help { flex-shrink: 0; }
   /* «Haz el tuyo»: al final de cada regalo, discreto, debajo de la pista */
   .make-own { pointer-events: auto; display: inline-block; padding: 7px 14px; border-radius: 999px;
     border: 1px solid var(--line); background: var(--glass); color: var(--pale); text-decoration: none;
